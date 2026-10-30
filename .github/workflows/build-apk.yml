@@ -1,0 +1,11 @@
+name: Build ChangeSnap APK
+
+'on':
+workflow_dispatch:
+
+jobs:
+build:
+runs-on: ubuntu-latest
+steps:
+- name: Test
+run: echo "Configuration valide"
