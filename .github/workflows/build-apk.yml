@@ -1,18 +1,7 @@
 name: Build ChangeSnap APK
-
-'on':
-workflow_dispatch:
-
-permissions:
-contents: read
-
-jobs:
-build:
-runs-on: ubuntu-latest
-steps:
-- name: Checkout repository
-uses: actions/checkout@v4
-
+'on': workflow_dispatch:
+permissions: contents: read
+jobs: build: runs-on: ubuntu-latest steps: - name: Checkout repository uses: actions/checkout@v4
   - name: Extract project ZIP
     run: |
       mkdir project
